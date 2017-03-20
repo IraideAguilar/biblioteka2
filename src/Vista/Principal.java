@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Controlador.SociosControlador;
+
 import javax.swing.JButton;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
@@ -16,6 +19,15 @@ import javax.swing.JProgressBar;
 public class Principal extends JFrame {
 
 	private JPanel contentPane;
+	private SociosControlador sociosControlador;
+
+	public SociosControlador getSociosControlador() {
+		return sociosControlador;
+	}
+
+	public void setSociosControlador(SociosControlador sociosControlador) {
+		this.sociosControlador = sociosControlador;
+	}
 
 	/**
 	 * Launch the application.
@@ -47,12 +59,19 @@ public class Principal extends JFrame {
 		JButton botonLibros = new JButton("Gestion Libros");
 		botonLibros.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 			}
 		});
 		botonLibros.setBounds(152, 103, 132, 23);
 		contentPane.add(botonLibros);
 		
 		JButton botonSocios = new JButton("Gestion Socios");
+		botonSocios.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sociosControlador.abrirGestionSocios();
+				
+			}
+		});
 		botonSocios.setBounds(152, 154, 132, 23);
 		contentPane.add(botonSocios);
 		

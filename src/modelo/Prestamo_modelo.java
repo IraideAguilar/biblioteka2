@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class Prestamo_modelo extends Conector{
 
-	public Prestamo_modelo(String dbIzena) {
-		super(dbIzena);
+	public Prestamo_modelo() {
+		super();
 	}
 	
 	public ArrayList <Prestamo> select(){ //SELECT VACÍO de un rs a un array

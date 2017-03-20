@@ -6,15 +6,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class Socio_modelo extends Conector {
+public class SocioModelo extends Conector {
 
-	public Socio_modelo(String dbIzena) {
-		super(dbIzena);
+	public SocioModelo() {
+		super();
 	}
 
-	
-		
-	
 	/**
 	 * 
 	 * @param int id de socio

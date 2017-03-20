@@ -20,6 +20,10 @@ public class Socio {
 		this.provincia = provincia;
 		this.dni = dni;
 	}
+	public Socio(){
+		super();
+	}
+	
 	
 	public void mostrarInfo(){
 		System.out.println("id: " + this.id

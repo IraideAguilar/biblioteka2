@@ -51,8 +51,8 @@ public class Prestamo {
 	
 	public void mostrarInfo(){
 		String bbdd = "biblioteka";
-		Socio_modelo sm = new Socio_modelo(bbdd);
-		Libro_modelo lm = new Libro_modelo(bbdd);
+		SocioModelo sm = new SocioModelo();
+		Libro_modelo lm = new Libro_modelo();
 		
 		String nombre_libro = lm.select(this.id_libro).getTitulo();
 		
